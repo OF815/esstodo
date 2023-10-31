@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Marked in the browser</title>
+</head>
+<body>
+<div id="dst" >
+</div>
+
+<pre id="src">
+# hello
+
+1. test
+2. テスト
+1. これは
+
+
+</pre>
+
+  <div id="content"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.getElementById('dst').innerHTML = marked.parse(document.getElementById('src').innerHTML);
+    document.getElementById('src').style.display = 'none';
+    alert("HELLO");
+  </script>
+</body>
+</html>
