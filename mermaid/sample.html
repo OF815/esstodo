@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mermaid Flowchart Example</title>
+  <!-- Include Mermaid library -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</head>
+<body>
+  <!-- Container for the Mermaid diagram -->
+  <div class="mermaid">
+    graph TD;
+      A[Start] --> B[Decision];
+      B -->|Yes| C[Action 1];
+      B -->|No| D[Action 2];
+      C --> E[End];
+      D --> E;
+  </div>
+</body>
+</html>
+
